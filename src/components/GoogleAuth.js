@@ -35,6 +35,7 @@ class GoogleAuth extends React.Component {
     }
 
     render() {
+        console.log(this.auth);
         const buttonConfig = this.props.isSignedIn
             ? {
                 color: "bg-red-400",
