@@ -29,7 +29,7 @@ app.get('/test', (req, res) => {
     res.json({data: 123});
 })
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../build'))
+    res.sendFile(path.join(__dirname, "build", "index.html"));
 })
 // db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
